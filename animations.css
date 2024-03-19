@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: backgroundChange 6s infinite alternate;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  #logo {
+    font-size: 24px;
+    font-weight: bold;
+    animation: colorChange 3s infinite;
+  }
+  
+  @keyframes colorChange {
+    0% { color: red; }
+    16.666% { color: orange; }
+    33.333% { color: yellow; }
+    50% { color: green; }
+    66.666% { color: blue; }
+    83.333% { color: indigo; }
+    100% { color: violet; }
+  }
+
+  @keyframes backgroundChange {
+    0% { background-color: #FF5733; }
+    20% { background-color: #3366FF; }
+    40% { background-color: #66FF99; }
+    60% { background-color: #FFC300; }
+    80% { background-color: #FF5733; }
+    100% { background-color: #9900FF; }
+  }
